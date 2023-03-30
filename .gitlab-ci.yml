@@ -11,7 +11,7 @@ all:
 #build:
   stage: build
   image: docker:latest
-#  needs: [test]
+  needs: []
   script:
    - docker build .
 
