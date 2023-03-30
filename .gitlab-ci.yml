@@ -2,13 +2,13 @@ stages:
   - test
   - build
 
-test:
+all:
   stage: test
   image: golang
   script:
    - go test .
 
-build:
+#build:
   stage: build
   image: docker:latest
 #  needs: [test]
