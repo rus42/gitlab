@@ -10,9 +10,8 @@ test:
 
 build:
   stage: build
+  needs: []
   image: docker:latest
   script:
    - docker build .
-  when: always
-#initial
 
