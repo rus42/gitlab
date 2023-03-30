@@ -10,8 +10,8 @@ test:
 
 build:
   stage: build
-  needs: []
   image: docker:latest
+  needs: []
   script:
    - docker build .
 
