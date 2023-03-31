@@ -1,6 +1,6 @@
 stages:
   - test
-  - build
+#  - build
 
 test:
   stage: test
@@ -9,9 +9,8 @@ test:
    - go test .
 
 build:
-  stage: build
+  stage: test
   image: docker:latest
-#  needs: []
   script:
    - docker build .
 
