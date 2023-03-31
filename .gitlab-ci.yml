@@ -5,12 +5,14 @@ stages:
 test:
   stage: all
   image: goland
+  script:
+    - go test . 
   rules:
-    - if: '$CI_DEFAULT_BRANCH'
+      - if: '$CI_DEFAULT_BRANCH'
 #    - changes:
 #      - /*.go
-  script:
-   - go test .
+#  script:
+#   - go test .
 
 build:
   stage: all
