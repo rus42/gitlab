@@ -8,7 +8,7 @@ test:
   rules:
     - if: '$CI_DEFAULT_BRANCH'
     - changes:
-      - *.go
+      - /*.go
   script:
    - go test .
 
