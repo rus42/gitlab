@@ -1,15 +1,19 @@
 stages:
-  - test
+  - all
 #  - build
 
 test:
-  stage: test
-  image: golang
+  stage: all
+  image: goland
+  rules:
+    - if: '$CI_DEFAULT_BRANCH'
+    - changes:
+      - *.go
   script:
    - go test .
 
 build:
-  stage: test
+  stage: all
   image: docker:latest
   script:
    - docker build .
