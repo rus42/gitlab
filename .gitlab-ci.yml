@@ -7,8 +7,8 @@ test:
   image: goland
   rules:
     - if: '$CI_DEFAULT_BRANCH'
-    - changes:
-      - /*.go
+#    - changes:
+#      - /*.go
   script:
    - go test .
 
