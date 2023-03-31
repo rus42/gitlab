@@ -8,8 +8,8 @@
 
 В качестве ответа в репозиторий шаблона с решением добавьте скриншоты с настройками раннера в проекте.
 
-- runnersettings_1
-- runnersettings_2
+- runnersettings_1.png
+- runnersettings_2.png
 
 
 Задание 2
